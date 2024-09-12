@@ -297,6 +297,6 @@ contraseña: MjAyNDA5MDQ=
 
 ## Acknowledgements
 
- - [Awesome README](https://github.com/ireyesroa/inventory-backend/master)
+ - [Awesome README](https://github.com/ireyesroa/inventory-backend)
 
 
