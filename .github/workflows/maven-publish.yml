@@ -4,6 +4,7 @@
 name: CI/CD pipeline
 
 on:
+#se lanza cuando se realice un pull request
   pull_request:
     branches:
       - master
@@ -16,6 +17,7 @@ jobs:
       contents: read
       packages: write
 
+#uso de verión java 8
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 1.8
