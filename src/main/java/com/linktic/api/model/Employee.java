@@ -1,24 +1,24 @@
 package com.linktic.api.model;
 
-//import io.swagger.annotations.ApiModel;
-//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
-//@ApiModel(description = "Entity that representation Employees in the project")
+@ApiModel(description = "Entity that representation Employees in the project")
 public class Employee {
 
-	//@ApiModelProperty(value = "primary key employee identifier", required = true)
+	@ApiModelProperty(value = "primary key employee identifier", required = true)
 	private Integer employeeId;
 	
-	//@ApiModelProperty(value = "employee name")
+	@ApiModelProperty(value = "employee name")
 	private String name;
 
-	//@ApiModelProperty(value = "employee address principal")
+	@ApiModelProperty(value = "employee address principal")
 	private String address;
 
-	//@ApiModelProperty(value = "employee phone principal")
+	@ApiModelProperty(value = "employee phone principal")
 	private String phone;
 
-	//@ApiModelProperty(value = "employee email principal")
+	@ApiModelProperty(value = "employee email principal")
 	private String email;
 	
 	public Employee() {}

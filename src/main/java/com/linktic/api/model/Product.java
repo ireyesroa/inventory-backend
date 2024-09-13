@@ -2,38 +2,38 @@ package com.linktic.api.model;
 
 import java.math.BigDecimal;
 
-//import io.swagger.annotations.ApiModel;
-//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 
-//@ApiModel(description = "Entity that representation products in the project")
+@ApiModel(description = "Entity that representation products in the project")
 public class Product {
 
-	//@ApiModelProperty(value = "primary key product identifier", required = true)
+	@ApiModelProperty(value = "primary key product identifier", required = true)
 	private Integer productId;
 
-	//@ApiModelProperty(value = "unique identification product", required = true)
+	@ApiModelProperty(value = "unique identification product", required = true)
 	private String sku;
 	
-	//@ApiModelProperty(value = "foreing key suppliers Id", required = true)
+	@ApiModelProperty(value = "foreing key suppliers Id", required = true)
 	private Integer supplierId;
 	
-	//@ApiModelProperty(value = "foreing key categories Id", required = true)
+	@ApiModelProperty(value = "foreing key categories Id", required = true)
 	private Integer categoryId;
 	
-	//@ApiModelProperty(value = "product name")
+	@ApiModelProperty(value = "product name")
 	private String productName;
 
-	//@ApiModelProperty(value = "product unit precio")
+	@ApiModelProperty(value = "product unit precio")
 	private BigDecimal unitPrice;
 	
-	//@ApiModelProperty(value = "product units in stock")
+	@ApiModelProperty(value = "product units in stock")
 	private int unitInStock;
 
-	//@ApiModelProperty(value = "identifier product discotinued")
+	@ApiModelProperty(value = "identifier product discotinued")
 	private boolean discontinued;
 
-	//@ApiModelProperty(value = "product picture")
+	@ApiModelProperty(value = "product picture")
 	private String picture;
 	
 	public Product() {}

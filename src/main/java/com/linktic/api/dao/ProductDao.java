@@ -70,7 +70,7 @@ public class ProductDao {
 	public List<Product> listPageable(int page, int size) {		
 		int offset = (page - 1) * size;
 		
-		String sql = "SELECT * FROM products LIMIT ? OFFSET ?";
+		String sql = "SELECT * FROM products LIMIT ? OFFSET ?";		
 		return jdbcTemplate.query(sql, BeanPropertyRowMapper.newInstance(Product.class), size, offset);
 	}
 

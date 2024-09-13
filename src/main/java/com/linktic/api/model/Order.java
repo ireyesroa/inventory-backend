@@ -6,39 +6,39 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-//import io.swagger.annotations.ApiModel;
-//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 
-//@ApiModel(description = "Entity that representation orders in the project")
+@ApiModel(description = "Entity that representation orders in the project")
 public class Order {
 
-	//@ApiModelProperty(value = "primary key order identifier", required = true)
+	@ApiModelProperty(value = "primary key order identifier", required = true)
 	private Integer orderId;
 	
-	//@ApiModelProperty(value = "primary key customer identifier", required = true)
+	@ApiModelProperty(value = "primary key customer identifier", required = true)
 	private int customerId;
 	
-	//@ApiModelProperty(value = "primary key employee identifier", required = true)
+	@ApiModelProperty(value = "primary key employee identifier", required = true)
 	private int employeeId;
 
-	//@ApiModelProperty(value = "current order date")
+	@ApiModelProperty(value = "current order date")
 	@JsonFormat(pattern="yyyy/MM/dd'T'HH:mm:ss")
 	private Timestamp orderDate;
 
-	//@ApiModelProperty(value = "order name")
+	@ApiModelProperty(value = "order name")
 	private String shipName;
 
-	//@ApiModelProperty(value = "order address")
+	@ApiModelProperty(value = "order address")
 	private String shipAddress;
 
-	//@ApiModelProperty(value = "order city")
+	@ApiModelProperty(value = "order city")
 	private String shipCity;
 
-	//@ApiModelProperty(value = "order country")
+	@ApiModelProperty(value = "order country")
 	private String shipCountry;
 	
-	//@ApiModelProperty(value = "order details")
+	@ApiModelProperty(value = "order details")
 	List<OrderDetail> orderDetails;
 	
 	public Order() {}

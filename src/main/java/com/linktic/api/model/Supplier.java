@@ -1,33 +1,33 @@
 package com.linktic.api.model;
 
-//import io.swagger.annotations.ApiModel;
-//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
-//@ApiModel(description = "Entity that representation suppliers in the project")
+@ApiModel(description = "Entity that representation suppliers in the project")
 public class Supplier {
 
-	//@ApiModelProperty(value = "PK supplier identifier", required = true)
+	@ApiModelProperty(value = "PK supplier identifier", required = true)
 	private Integer supplierId;
 	
-	//@ApiModelProperty(value = "supplier company name")
+	@ApiModelProperty(value = "supplier company name")
 	private String companyName;
 	
-	//@ApiModelProperty(value = "information of contact title")
+	@ApiModelProperty(value = "information of contact title")
 	private String contactName;
 	
-	//@ApiModelProperty(value = "principal address of supplier")
+	@ApiModelProperty(value = "principal address of supplier")
 	private String address;
 
-	//@ApiModelProperty(value = "city point")
+	@ApiModelProperty(value = "city point")
 	private String city;
 	
-	//@ApiModelProperty(value= "country of supplier")
+	@ApiModelProperty(value= "country of supplier")
 	private String country;
 
-	//@ApiModelProperty(value = "number cellphone")
+	@ApiModelProperty(value = "number cellphone")
 	private String phone;
 
-	//@ApiModelProperty(value = "postal code")
+	@ApiModelProperty(value = "postal code")
 	private String postalCode;
 	
 	public Supplier() {}

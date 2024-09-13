@@ -1,24 +1,24 @@
 package com.linktic.api.model;
 
-//import io.swagger.annotations.ApiModel;
-//import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
-//@ApiModel(description = "Entity that representation Customer in the project")
+@ApiModel(description = "Entity that representation Customer in the project")
 public class Customer {
 
-	//@ApiModelProperty(value = "primary key customer identifier", required = true)
+	@ApiModelProperty(value = "primary key customer identifier", required = true)
 	private Integer customerId;
 
-	//@ApiModelProperty(value = "customer name")
+	@ApiModelProperty(value = "customer name")
 	private String name;
 	
-	//@ApiModelProperty(value = "customer address principal")
+	@ApiModelProperty(value = "customer address principal")
 	private String address;
 
-	//@ApiModelProperty(value = "customer phone principal")
+	@ApiModelProperty(value = "customer phone principal")
 	private String phone;
 
-	//@ApiModelProperty(value = "customer email principal")
+	@ApiModelProperty(value = "customer email principal")
 	private String email;
 	
 	public Customer() {}
