@@ -397,3 +397,16 @@ http://localhost:8080/v2/api-docs
 
 
 
+
+
+
+
+
+
+
+
+## Acknowledgements
+
+ - [Awesome README](https://github.com/ireyesroa/inventory-backend)
+
+
